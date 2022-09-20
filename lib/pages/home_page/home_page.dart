@@ -8,7 +8,9 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.lightBlueAccent,
       appBar: AppBar(
+        leading: Image.asset("assets/images/Iftah.png"),
         centerTitle: true,
         title: const Text(
           homePageTitle,

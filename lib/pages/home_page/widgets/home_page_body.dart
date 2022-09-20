@@ -7,30 +7,44 @@ class HomePageBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Container(
-          height: 100.0,
-          width: 100.0,
-          child: FittedBox(
-            child: FloatingActionButton(
-              tooltip: scheduleTooltip,
-              child: const Icon(Icons.schedule),
-              onPressed: () {},
-            ),
+        const Text(
+          titleText,
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 50.0,
           ),
         ),
-        Container(
-          height: 100.0,
-          width: 100.0,
-          child: FittedBox(
-            child: FloatingActionButton(
-              tooltip: crewTooltip,
-              child: const Icon(Icons.people),
-              onPressed: () {},
+        const SizedBox(height: 200.0),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+              height: 100.0,
+              width: 100.0,
+              child: FittedBox(
+                child: FloatingActionButton(
+                  tooltip: scheduleTooltip,
+                  child: const Icon(Icons.schedule),
+                  onPressed: () {},
+                ),
+              ),
             ),
-          ),
+            const SizedBox(width: 50.0),
+            Container(
+              height: 100.0,
+              width: 100.0,
+              child: FittedBox(
+                child: FloatingActionButton(
+                  tooltip: crewTooltip,
+                  child: const Icon(Icons.people),
+                  onPressed: () {},
+                ),
+              ),
+            ),
+          ],
         ),
       ],
     );
