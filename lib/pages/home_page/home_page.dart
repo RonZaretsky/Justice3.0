@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:justice3/global_utils/global_appbar.dart';
 import 'package:justice3/pages/home_page/home_page_utils.dart';
 import 'package:justice3/pages/home_page/widgets/home_page_body.dart';
 
@@ -9,15 +10,8 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.lightBlueAccent,
-      appBar: AppBar(
-        leading: Image.asset("assets/images/Iftah.png"),
-        centerTitle: true,
-        title: const Text(
-          homePageTitle,
-          textAlign: TextAlign.center,
-        ),
-      ),
-      body: Center(child: HomePageBody()),
+      appBar: GlobalAppBar(appbarTitle: homePageTitle),
+      body: const Center(child: HomePageBody()),
     );
   }
 }

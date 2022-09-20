@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:justice3/pages/crew_page/crew_page.dart';
 import 'package:justice3/pages/home_page/home_page_utils.dart';
+import 'package:justice3/pages/schedule_page/schedule_page.dart';
 
 class HomePageBody extends StatelessWidget {
   const HomePageBody({Key? key}) : super(key: key);
@@ -21,26 +23,42 @@ class HomePageBody extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Container(
+            SizedBox(
               height: 100.0,
               width: 100.0,
               child: FittedBox(
                 child: FloatingActionButton(
+                  heroTag: 'scheduleNavBtn',
                   tooltip: scheduleTooltip,
                   child: const Icon(Icons.schedule),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SchedulePage(),
+                      ),
+                    );
+                  },
                 ),
               ),
             ),
             const SizedBox(width: 50.0),
-            Container(
+            SizedBox(
               height: 100.0,
               width: 100.0,
               child: FittedBox(
                 child: FloatingActionButton(
+                  heroTag: 'crewNavBtn',
                   tooltip: crewTooltip,
                   child: const Icon(Icons.people),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const CrewPage(),
+                      ),
+                    );
+                  },
                 ),
               ),
             ),
