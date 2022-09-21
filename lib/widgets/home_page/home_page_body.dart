@@ -28,7 +28,7 @@ class HomePageBody extends StatelessWidget {
               width: 100.0,
               child: FittedBox(
                 child: FloatingActionButton(
-                  heroTag: 'scheduleNavBtn',
+                  heroTag: scheduleNavBtnHerotag,
                   tooltip: scheduleTooltip,
                   child: const Icon(Icons.schedule),
                   onPressed: () {
@@ -48,7 +48,7 @@ class HomePageBody extends StatelessWidget {
               width: 100.0,
               child: FittedBox(
                 child: FloatingActionButton(
-                  heroTag: 'crewNavBtn',
+                  heroTag: crewNavBtnHerotag,
                   tooltip: crewTooltip,
                   child: const Icon(Icons.people),
                   onPressed: () {

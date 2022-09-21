@@ -1,0 +1,40 @@
+[
+    {
+        "uuid": "",
+        "fullName": "יעקב אייזנר",
+        "personalNumber": 8058975,
+        "memberRank": "אלוף",
+        "phoneNumber": "0544232698",
+        "isCommander": true,
+        "lastRegularDay": "",
+        "lastShabat": "",
+        "lastHoliday": "",
+        "beforeLastShabat": "",
+        "notAvailableUntil": "",
+        "section": "אלקטרוניקה",
+        "releaseDate": "",
+        "kevaDate": "",
+        "regularDayFreq": 90,
+        "shabatFreq": 365,
+        "birthday": ""
+    },
+    {
+        "uuid": "",
+        "fullName": "רון זרצקי",
+        "personalNumber": 8503744,
+        "memberRank": "רב אלוף",
+        "phoneNumber": "0544785778",
+        "isCommander": true,
+        "lastRegularDay": "",
+        "lastShabat": "",
+        "lastHoliday": "",
+        "beforeLastShabat": "",
+        "notAvailableUntil": "",
+        "section": "אלקטרוניקה",
+        "releaseDate": "",
+        "kevaDate": "",
+        "regularDayFreq": 90,
+        "shabatFreq": 365,
+        "birthday": ""
+    }
+]

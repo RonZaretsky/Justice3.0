@@ -1,31 +1,6 @@
 {
   "crewMembers": [
     {
-      "FullName": "עומר קירשנבוים",
-      "PersonalNumber": 8093186,
-      "MemberRank": "סרן",
-      "PhoneNumber": "0548099663",
-      "IsCommander": true,
-      "LastRegularDay": "2022-07-27T00:00:00+03:00",
-      "LastShabat": "2021-12-11T00:00:00",
-      "LastHoliday": "2020-09-27T00:00:00",
-      "BeforeLastShabat": "2021-09-04T00:00:00",
-      "NotAvailableUntil": "2000-01-01T00:00:00",
-      "Section": "Plastic",
-      "IsMarried": false,
-      "HasKids": false,
-      "FarResidence": true,
-      "ReleaseDate": "2022-08-12T00:00:00",
-      "KevaDate": "2019-08-12T00:00:00",
-      "RegularDayFreq": 90,
-      "ShabatFreq": 365,
-      "Birthday": "1995-05-10T00:00:00",
-      "ProblemtaicDays": [
-        "Sunday",
-        "Thursday"
-      ]
-    },
-    {
       "FullName": "יעקב אייזנר",
       "PersonalNumber": 8058975,
       "MemberRank": "אלוף",
@@ -113,30 +88,6 @@
       "Birthday": "1996-11-07T00:00:00",
       "ProblemtaicDays": [
         "Monday"
-      ]
-    },
-    {
-      "FullName": "גיא שניאורסון",
-      "PersonalNumber": 8049026,
-      "MemberRank": "סרן",
-      "PhoneNumber": "0545676642",
-      "IsCommander": true,
-      "LastRegularDay": "2022-01-30T00:00:00",
-      "LastShabat": "2022-02-19T00:00:00",
-      "LastHoliday": "2021-09-06T00:00:00",
-      "BeforeLastShabat": "2021-10-09T00:00:00",
-      "NotAvailableUntil": "2000-01-01T00:00:00",
-      "Section": "Platforms",
-      "IsMarried": false,
-      "HasKids": false,
-      "FarResidence": false,
-      "ReleaseDate": "2022-05-30T00:00:00",
-      "KevaDate": "2019-06-01T00:00:00",
-      "RegularDayFreq": 31,
-      "ShabatFreq": 90,
-      "Birthday": "1994-11-26T00:00:00",
-      "ProblemtaicDays": [
-        "Wednesday"
       ]
     },
     {
@@ -316,28 +267,6 @@
       "ProblemtaicDays": []
     },
     {
-      "FullName": "רונלי שלמה",
-      "PersonalNumber": 8503744,
-      "MemberRank": "סגן",
-      "PhoneNumber": "0545528853",
-      "IsCommander": true,
-      "LastRegularDay": "2022-02-27T00:00:00",
-      "LastShabat": "2022-01-29T00:00:00",
-      "LastHoliday": "2020-10-09T00:00:00",
-      "BeforeLastShabat": "2021-09-25T00:00:00",
-      "NotAvailableUntil": "2100-01-01T00:00:00",
-      "Section": "אלקטרוניקה",
-      "IsMarried": false,
-      "HasKids": false,
-      "FarResidence": false,
-      "ReleaseDate": "2022-02-28T00:00:00",
-      "KevaDate": "2022-03-01T00:00:00",
-      "RegularDayFreq": 14,
-      "ShabatFreq": 55,
-      "Birthday": "1994-07-14T00:00:00",
-      "ProblemtaicDays": []
-    },
-    {
       "FullName": "דימיטרי גופמן",
       "PersonalNumber": 8267601,
       "MemberRank": "סגן",
@@ -360,7 +289,7 @@
       "ProblemtaicDays": []
     },
     {
-      "FullName": "לנה שפיצבור",
+      "FullName": "לנה שפיצבורג",
       "PersonalNumber": 8422069,
       "MemberRank": "סגן",
       "PhoneNumber": "0546402259",
@@ -382,7 +311,7 @@
       "ProblemtaicDays": []
     },
     {
-      "FullName": "פטר אודחין",
+      "FullName": "פטר אודצ'ין",
       "PersonalNumber": 8073147,
       "MemberRank": "רסל",
       "PhoneNumber": "0523594786",
@@ -406,28 +335,6 @@
         "Tuesday",
         "Wednesday"
       ]
-    },
-    {
-      "FullName": "מתן בן שושן",
-      "PersonalNumber": 8096909,
-      "MemberRank": "רסל",
-      "PhoneNumber": "0527557132",
-      "IsCommander": false,
-      "LastRegularDay": "2022-03-02T00:00:00",
-      "LastShabat": "2021-12-18T00:00:00",
-      "LastHoliday": "2018-09-10T00:00:00",
-      "BeforeLastShabat": "2021-09-18T00:00:00",
-      "NotAvailableUntil": "2000-01-01T00:00:00",
-      "Section": "אלקטרוניקה",
-      "IsMarried": false,
-      "HasKids": false,
-      "FarResidence": false,
-      "ReleaseDate": "2022-08-31T00:00:00",
-      "KevaDate": "2018-05-07T00:00:00",
-      "RegularDayFreq": 31,
-      "ShabatFreq": 90,
-      "Birthday": "1995-06-24T00:00:00",
-      "ProblemtaicDays": []
     },
     {
       "FullName": "יונתן גוטקין",
@@ -587,30 +494,6 @@
       "ProblemtaicDays": []
     },
     {
-      "FullName": "דביר אורן",
-      "PersonalNumber": 8480513,
-      "MemberRank": "סמל",
-      "PhoneNumber": "0547312455",
-      "IsCommander": false,
-      "LastRegularDay": "2022-02-21T00:00:00",
-      "LastShabat": "2022-01-15T00:00:00",
-      "LastHoliday": "2022-01-15T00:00:00",
-      "BeforeLastShabat": "2021-10-09T00:00:00",
-      "NotAvailableUntil": "2000-01-01T00:00:00",
-      "Section": "אלקטרוניקה",
-      "IsMarried": false,
-      "HasKids": false,
-      "FarResidence": true,
-      "ReleaseDate": "2022-06-15T00:00:00",
-      "KevaDate": "2022-06-16T00:00:00",
-      "RegularDayFreq": 14,
-      "ShabatFreq": 55,
-      "Birthday": "1999-06-20T00:00:00",
-      "ProblemtaicDays": [
-        "Sunday"
-      ]
-    },
-    {
       "FullName": "אורן מן",
       "PersonalNumber": 8183678,
       "MemberRank": "קמא",
@@ -740,28 +623,6 @@
       "RegularDayFreq": 14,
       "ShabatFreq": 63,
       "Birthday": "1999-02-10T00:00:00",
-      "ProblemtaicDays": []
-    },
-    {
-      "FullName": "ירין",
-      "PersonalNumber": 1234,
-      "MemberRank": "שדגכ",
-      "PhoneNumber": "1234",
-      "IsCommander": false,
-      "LastRegularDay": "0001-01-01T00:00:00",
-      "LastShabat": "0001-01-01T00:00:00",
-      "LastHoliday": "0001-01-01T00:00:00",
-      "BeforeLastShabat": "0001-01-01T00:00:00",
-      "NotAvailableUntil": "0001-01-01T00:00:00",
-      "Section": "שדגכשדגכ",
-      "IsMarried": false,
-      "HasKids": false,
-      "FarResidence": false,
-      "ReleaseDate": "0001-01-01T00:00:00",
-      "KevaDate": "0001-01-01T00:00:00",
-      "RegularDayFreq": 0,
-      "ShabatFreq": 0,
-      "Birthday": "0001-01-01T00:00:00",
       "ProblemtaicDays": []
     }
   ]
