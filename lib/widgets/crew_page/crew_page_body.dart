@@ -81,7 +81,7 @@ class CrewPageBody extends StatelessWidget {
                 padding: EdgeInsets.all(30.0),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(50.0),
-                  color: Colors.white,
+                  color: Colors.white.withOpacity(0.4),
                   border: Border.all(
                     color: Colors.blueAccent,
                     width: 5.0,
