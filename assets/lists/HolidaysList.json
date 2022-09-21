@@ -1,0 +1,125 @@
+{
+    
+    "holidays": [
+      {
+        "HolidayName": "Passover A",
+        "StartDate": "2022-04-15T00:00:00",
+        "EndDate": "2022-04-16T00:00:00"
+      },
+      {
+        "HolidayName": "Passover B",
+        "StartDate": "2022-04-21T00:00:00",
+        "EndDate": "2022-04-22T00:00:00"
+      },
+      {
+        "HolidayName": "Zikaron",
+        "StartDate": "2022-05-04T00:00:00",
+        "EndDate": "2022-05-05T00:00:00"
+      },
+      {
+        "HolidayName": "Shavuot",
+        "StartDate": "2022-06-04T00:00:00",
+        "EndDate": "2022-06-05T00:00:00"
+      },
+      {
+        "HolidayName": "Rosh Hashana",
+        "StartDate": "2022-09-25T00:00:00",
+        "EndDate": "2022-09-27T00:00:00"
+      },
+      {
+        "HolidayName": "Kipur",
+        "StartDate": "2022-10-04T00:00:00",
+        "EndDate": "2022-10-05T00:00:00"
+      },
+      {
+        "HolidayName": "Sukkot A",
+        "StartDate": "2022-10-09T00:00:00",
+        "EndDate": "2022-10-10T00:00:00"
+      },
+      {
+        "HolidayName": "Sukkot B",
+        "StartDate": "2022-10-16T00:00:00",
+        "EndDate": "2022-10-17T00:00:00"
+      },
+      {
+        "HolidayName": "Passover A",
+        "StartDate": "2023-04-05T00:00:00",
+        "EndDate": "2023-04-06T00:00:00"
+      },
+      {
+        "HolidayName": "Passover B",
+        "StartDate": "2023-04-11T00:00:00",
+        "EndDate": "2023-04-12T00:00:00"
+      },
+      {
+        "HolidayName": "Zikaron",
+        "StartDate": "2023-05-25T00:00:00",
+        "EndDate": "2023-05-26T00:00:00"
+      },
+      {
+        "HolidayName": "Shavuot",
+        "StartDate": "2023-06-25T00:00:00",
+        "EndDate": "2023-06-26T00:00:00"
+      },
+      {
+        "HolidayName": "Rosh Hashana",
+        "StartDate": "2023-09-15T00:00:00",
+        "EndDate": "2023-09-17T00:00:00"
+      },
+      {
+        "HolidayName": "Kipur",
+        "StartDate": "2023-09-24T00:00:00",
+        "EndDate": "2023-09-25T00:00:00"
+      },
+      {
+        "HolidayName": "Sukkot A",
+        "StartDate": "2023-09-29T00:00:00",
+        "EndDate": "2023-03-30T00:00:00"
+      },
+      {
+        "HolidayName": "Sukkot B",
+        "StartDate": "2023-10-06T00:00:00",
+        "EndDate": "2023-10-07T00:00:00"
+      },
+      {
+        "HolidayName": "Passover A",
+        "StartDate": "2024-04-22T00:00:00",
+        "EndDate": "2024-04-23T00:00:00"
+      },
+      {
+        "HolidayName": "Passover B",
+        "StartDate": "2024-04-28T00:00:00",
+        "EndDate": "2024-04-29T00:00:00"
+      },
+      {
+        "HolidayName": "Zikaron",
+        "StartDate": "2024-05-13T00:00:00",
+        "EndDate": "2024-05-14T00:00:00"
+      },
+      {
+        "HolidayName": "Shavuot",
+        "StartDate": "2024-06-11T00:00:00",
+        "EndDate": "2024-06-12T00:00:00"
+      },
+      {
+        "HolidayName": "Rosh Hashana",
+        "StartDate": "2024-10-02T00:00:00",
+        "EndDate": "2024-10-04T00:00:00"
+      },
+      {
+        "HolidayName": "Kipur",
+        "StartDate": "2024-10-11T00:00:00",
+        "EndDate": "2024-10-12T00:00:00"
+      },
+      {
+        "HolidayName": "Sukkot A",
+        "StartDate": "2024-10-16T00:00:00",
+        "EndDate": "2024-10-17T00:00:00"
+      },
+      {
+        "HolidayName": "Sukkot B",
+        "StartDate": "2024-10-23T00:00:00",
+        "EndDate": "2024-10-24T00:00:00"
+      }
+    ]
+}

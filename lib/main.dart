@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:justice3/pages/home_page/home_page.dart';
+import 'package:justice3/view/home_page/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Justince 3.0',
       theme: ThemeData(
         primarySwatch: Colors.blue,
