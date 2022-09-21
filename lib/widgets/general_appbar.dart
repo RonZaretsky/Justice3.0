@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:justice3/global/global_consts.dart';
 
 PreferredSizeWidget GeneralAppar({required String appbarTitle}) {
@@ -15,6 +16,14 @@ PreferredSizeWidget GeneralAppar({required String appbarTitle}) {
         ),
       ],
     ),
+=======
+
+import '../view/home_page/home_page_utils.dart';
+
+PreferredSizeWidget GeneralAppBar({required String appbarTitle}) {
+  return AppBar(
+    leading: Image.asset("assets/images/Iftah.png"),
+>>>>>>> 09e8448536eaaf1e6005a9c98356968200c35d2a
     centerTitle: true,
     title: Text(
       appbarTitle,
