@@ -11,23 +11,23 @@ String memberToJson(List<Member> data) =>
     json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
 
 class Member {
-  final String uuid;
-  final String fullName;
-  final int personalNumber;
-  final String memberRank;
-  final String phoneNumber;
-  final bool isCommander;
-  final DateTime lastRegularDay;
-  final DateTime lastShabat;
-  final DateTime lastHoliday;
-  final DateTime beforeLastShabat;
-  final DateTime notAvailableUntil;
-  final String section;
-  final DateTime releaseDate;
-  final DateTime kevaDate;
-  final int regularDayFreq;
-  final int shabatFreq;
-  final DateTime birthday;
+  String uuid;
+  String fullName;
+  int personalNumber;
+  String memberRank;
+  String phoneNumber;
+  bool isCommander;
+  DateTime lastRegularDay;
+  DateTime lastShabat;
+  DateTime lastHoliday;
+  DateTime beforeLastShabat;
+  DateTime notAvailableUntil;
+  String section;
+  DateTime releaseDate;
+  DateTime kevaDate;
+  int regularDayFreq;
+  int shabatFreq;
+  DateTime birthday;
   Member({
     required this.uuid,
     required this.fullName,

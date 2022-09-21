@@ -16,3 +16,12 @@ class AddMemberEvent extends MembersListEvent {
     required this.newMember,
   });
 }
+
+class UpdateMemberEvent extends MembersListEvent {
+  final Member updatedMember;
+  final String memberUuid;
+  UpdateMemberEvent({
+    required this.updatedMember,
+    required this.memberUuid,
+  });
+}

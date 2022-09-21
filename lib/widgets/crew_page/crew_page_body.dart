@@ -1,7 +1,7 @@
+// ignore: depend_on_referenced_packages
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:justice3/blocs/members_list/members_list_bloc.dart';
 import 'package:justice3/global/global_consts.dart';
 import 'package:justice3/models/member_model.dart';
@@ -36,7 +36,8 @@ class CrewPageBody extends StatelessWidget {
                     heroTag: 'aa',
                     tooltip: homeTooltip,
                     onPressed: () {
-                      Member member = new Member(
+                      //TODO: implement addition of new member
+                      Member member = Member(
                           uuid: 'uuid',
                           fullName: 'fullName',
                           personalNumber: 12345,
@@ -75,11 +76,19 @@ class CrewPageBody extends StatelessWidget {
               ],
             ),
             Expanded(
-              child: SingleChildScrollView(
-                scrollDirection: Axis.vertical,
+              child: Container(
+                margin: EdgeInsets.all(10.0),
+                padding: EdgeInsets.all(10.0),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10.0),
+                  color: Colors.white,
+                ),
                 child: SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: BuildDataTable(context),
+                  scrollDirection: Axis.vertical,
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: BuildDataTable(),
+                  ),
                 ),
               ),
             ),

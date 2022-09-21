@@ -10,6 +10,7 @@ class MembersListBloc extends Bloc<MembersListEvent, MembersListState> {
   MembersListBloc() : super(MembersListState.initial()) {
     on<LoadMembersJsonEvent>(_parseJson);
     on<AddMemberEvent>(_addMember);
+    on<UpdateMemberEvent>(_updatedMember);
   }
 
   void _parseJson(
@@ -22,5 +23,15 @@ class MembersListBloc extends Bloc<MembersListEvent, MembersListState> {
   void _addMember(AddMemberEvent event, Emitter<MembersListState> emit) {
     final newMembers = [...state.membersList, event.newMember];
     emit(state.copyWith(membersList: newMembers));
+  }
+
+  void _updatedMember(UpdateMemberEvent event, Emitter<MembersListState> emit) {
+    final updateMembers = state.membersList.map((Member member) {
+      if (member.uuid == event.memberUuid) {
+        return event.updatedMember;
+      }
+      return member;
+    }).toList();
+    emit(state.copyWith(membersList: updateMembers));
   }
 }

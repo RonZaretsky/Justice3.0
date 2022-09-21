@@ -1,6 +1,6 @@
 [
     {
-        "uuid": "",
+        "uuid": "0",
         "fullName": "יעקב אייזנר",
         "personalNumber": 8058975,
         "memberRank": "אלוף",
@@ -19,7 +19,7 @@
         "birthday": "2022-09-21 16:12:07.130028"
     },
     {
-        "uuid": "",
+        "uuid": "12345234523",
         "fullName": "רון זרצקי",
         "personalNumber": 8503744,
         "memberRank": "רב אלוף",
