@@ -77,11 +77,21 @@ class CrewPageBody extends StatelessWidget {
             ),
             Expanded(
               child: Container(
-                margin: EdgeInsets.all(10.0),
-                padding: EdgeInsets.all(10.0),
+                margin: EdgeInsets.all(30.0),
+                padding: EdgeInsets.all(30.0),
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10.0),
+                  borderRadius: BorderRadius.circular(50.0),
                   color: Colors.white,
+                  border: Border.all(
+                    color: Colors.blueAccent,
+                    width: 5.0,
+                  ),
+                  boxShadow: const [
+                    BoxShadow(
+                        color: Colors.white,
+                        blurRadius: 50.0,
+                        offset: Offset(2.0, 2.0))
+                  ],
                 ),
                 child: SingleChildScrollView(
                   scrollDirection: Axis.vertical,
