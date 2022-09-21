@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:justice3/pages/crew_page/crew_page.dart';
-import 'package:justice3/pages/home_page/home_page_utils.dart';
-import 'package:justice3/pages/schedule_page/schedule_page.dart';
+import 'package:justice3/global/home_page_consts.dart';
+import 'package:justice3/views/crew_page.dart';
+import 'package:justice3/views/schedule_page.dart';
 
 class HomePageBody extends StatelessWidget {
   const HomePageBody({Key? key}) : super(key: key);

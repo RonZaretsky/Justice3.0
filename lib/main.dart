@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:justice3/pages/home_page/home_page.dart';
+import 'package:justice3/views/home_page.dart';
 
 void main() {
   runApp(const MyApp());
