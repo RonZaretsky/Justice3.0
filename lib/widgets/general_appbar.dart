@@ -1,10 +1,20 @@
 import 'package:flutter/material.dart';
-
-import '../view/home_page/home_page_utils.dart';
+import 'package:justice3/global/global_consts.dart';
 
 PreferredSizeWidget GeneralAppBar({required String appbarTitle}) {
   return AppBar(
-    leading: Image.asset("assets/images/Iftah.png"),
+    leading: Column(
+      children: [
+        Image.asset(
+          iftahLogoPath,
+          height: 45.0,
+        ),
+        Text(
+          currerntVersion,
+          style: TextStyle(fontSize: 10.0),
+        ),
+      ],
+    ),
     centerTitle: true,
     title: Text(
       appbarTitle,
