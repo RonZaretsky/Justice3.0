@@ -2,52 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 import 'package:justice3/blocs/members_list/members_list_bloc.dart';
+import 'package:justice3/global/crew_page_consts.dart';
 import 'package:justice3/models/member_model.dart';
 import 'package:justice3/utils.dart';
 
+late BuildContext _context;
+late int _index;
+
 Widget BuildDataTable(BuildContext context) {
+  _context = context;
   final members = context.watch<MembersListBloc>().state.membersList.toList();
-
-  // final members = <Member>[
-  // Member(
-  //   uuid: 'uuid',
-  //   fullName: 'fullName',
-  //   personalNumber: 12345,
-  //   memberRank: 'memberRank',
-  //   phoneNumber: 'phoneNumber',
-  //   isCommander: true,
-  //   lastRegularDay: DateTime.now(),
-  //   lastShabat: DateTime.now(),
-  //   lastHoliday: DateTime.now(),
-  //   beforeLastShabat: DateTime.now(),
-  //   notAvailableUntil: DateTime.now(),
-  //   section: 'section',
-  //   releaseDate: DateTime.now(),
-  //   kevaDate: DateTime.now(),
-  //   regularDayFreq: 3,
-  //   shabatFreq: 3,
-  //   birthday: DateTime.now(),
-  // );
-  // ];
-
-  final columns = [
-    'יום הולדת',
-    'סבב שבת',
-    'סבב חול',
-    'כניסה לקבע',
-    'תאריך שחרור',
-    'מדור',
-    'לא זמין עד',
-    'שבת לפני אחרונה',
-    'חג אחרון',
-    'שבת אחרונה',
-    'יום חול אחרון',
-    'מפקד',
-    'מספר טלפון',
-    'דרגה',
-    'מספר אישי',
-    'שם'
-  ];
 
   return DataTable(
     columns: _getColumns(columns),
@@ -84,14 +48,107 @@ List<DataRow> _getUsers(List<Member> members) {
     ];
     return DataRow(
       cells: Utils.modelBuilder(cells, (index, cell) {
+        _index = index;
         if (cell.runtimeType == DateTime) {
           DateTime dateTime = DateTime.parse(cell.toString());
-          final DateFormat formatter = DateFormat('yyyy-MM-dd');
+          final DateFormat formatter = DateFormat('dd-MM-yyyy');
           final String formatted = formatter.format(dateTime);
-          return DataCell(Text(formatted));
+          return _buildDataCell(formatted, index, cell, member);
         }
-        return DataCell(Text('$cell'));
+        return _buildDataCell('$cell', index, cell, member);
       }),
     );
   }).toList();
+}
+
+DataCell _buildDataCell(String data, int index, Object? cell, Member member) {
+  return DataCell(Text(data), onDoubleTap: () {
+    switch (cell.runtimeType) {
+      case String:
+        _editStringIntType(member, index);
+        break;
+      case int:
+        _editStringIntType(member, index);
+        break;
+      case DateTime:
+        _editDateType(member, index);
+        break;
+    }
+  });
+}
+
+Future _editStringIntType(Member member, int index) async {
+  final newData = await showDialog(
+    context: _context,
+    builder: (_) => AlertDialog(
+      title: Text(columns[index]),
+      content: TextFormField(
+          initialValue: _whatAttributeToEditStringInt(member, index)),
+      actions: [
+        ElevatedButton(
+            onPressed: () {
+              Navigator.pop(_context);
+            },
+            child: Text('אישור'))
+      ],
+    ),
+  );
+}
+
+Future _editDateType(Member member, int index) async {
+  final newData = await showDialog(
+    context: _context,
+    builder: (_) => AlertDialog(
+      title: Text(columns[index]),
+      content: DatePickerDialog(
+        firstDate: DateTime.parse('19700101'),
+        lastDate: DateTime.parse('30000101'),
+        initialDate: _whatDateToEdit(member, index),
+      ),
+    ),
+  );
+}
+
+DateTime _whatDateToEdit(Member member, int index) {
+  switch (index) {
+    case 0:
+      return member.birthday;
+    case 3:
+      return member.kevaDate;
+    case 4:
+      return member.releaseDate;
+    case 6:
+      return member.notAvailableUntil;
+    case 7:
+      return member.beforeLastShabat;
+    case 8:
+      return member.lastHoliday;
+    case 9:
+      return member.lastShabat;
+    case 10:
+      return member.lastRegularDay;
+    default:
+      return DateTime.now();
+  }
+}
+
+String _whatAttributeToEditStringInt(Member member, int index) {
+  switch (index) {
+    case 1:
+      return member.shabatFreq.toString();
+    case 2:
+      return member.regularDayFreq.toString();
+    case 5:
+      return member.section.toString();
+    case 12:
+      return member.phoneNumber.toString();
+    case 13:
+      return member.memberRank.toString();
+    case 14:
+      return member.personalNumber.toString();
+    case 15:
+      return member.fullName.toString();
+    default:
+      return '';
+  }
 }
