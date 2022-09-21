@@ -17,17 +17,17 @@ class Member {
   final String memberRank;
   final String phoneNumber;
   final bool isCommander;
-  final String lastRegularDay;
-  final String lastShabat;
-  final String lastHoliday;
-  final String beforeLastShabat;
-  final String notAvailableUntil;
+  final DateTime lastRegularDay;
+  final DateTime lastShabat;
+  final DateTime lastHoliday;
+  final DateTime beforeLastShabat;
+  final DateTime notAvailableUntil;
   final String section;
-  final String releaseDate;
-  final String kevaDate;
+  final DateTime releaseDate;
+  final DateTime kevaDate;
   final int regularDayFreq;
   final int shabatFreq;
-  final String birthday;
+  final DateTime birthday;
   Member({
     required this.uuid,
     required this.fullName,
@@ -55,17 +55,17 @@ class Member {
         memberRank: json["memberRank"],
         phoneNumber: json["phoneNumber"],
         isCommander: json["isCommander"],
-        lastRegularDay: json["lastRegularDay"],
-        lastShabat: json["lastShabat"],
-        lastHoliday: json["lastHoliday"],
-        beforeLastShabat: json["beforeLastShabat"],
-        notAvailableUntil: json["notAvailableUntil"],
+        lastRegularDay: DateTime.parse(json["lastRegularDay"]),
+        lastShabat: DateTime.parse(json["lastShabat"]),
+        lastHoliday: DateTime.parse(json["lastHoliday"]),
+        beforeLastShabat: DateTime.parse(json["beforeLastShabat"]),
+        notAvailableUntil: DateTime.parse(json["notAvailableUntil"]),
         section: json["section"],
-        releaseDate: json["releaseDate"],
-        kevaDate: json["kevaDate"],
+        releaseDate: DateTime.parse(json["releaseDate"]),
+        kevaDate: DateTime.parse(json["kevaDate"]),
         regularDayFreq: json["regularDayFreq"],
         shabatFreq: json["shabatFreq"],
-        birthday: json["birthday"],
+        birthday: DateTime.parse(json["birthday"]),
       );
 
   Map<String, dynamic> toJson() => {

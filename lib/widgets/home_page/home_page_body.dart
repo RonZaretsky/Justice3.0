@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:justice3/blocs/members_list/members_list_bloc.dart';
 import 'package:justice3/global/home_page_consts.dart';
 import 'package:justice3/views/crew_page.dart';
 import 'package:justice3/views/schedule_page.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class HomePageBody extends StatelessWidget {
   const HomePageBody({Key? key}) : super(key: key);
@@ -55,7 +57,12 @@ class HomePageBody extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const CrewPage(),
+                        builder: (context) {
+                          context.read<MembersListBloc>().add(
+                              LoadMembersJsonEvent(
+                                  jsonPath: 'assets/lists/MembersList.json'));
+                          return const CrewPage();
+                        },
                       ),
                     );
                   },
