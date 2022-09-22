@@ -111,6 +111,7 @@ class _BuildDataTableState extends State<BuildDataTable> {
   }
 
   Future _editStringIntType(Member member, int index) async {
+    controller.text = _whatAttributeToEditStringInt(member, index);
     final newData = await showDialog(
       context: context,
       builder: (_) => AlertDialog(
@@ -171,6 +172,37 @@ class _BuildDataTableState extends State<BuildDataTable> {
         return member.lastRegularDay;
       default:
         return DateTime.now();
+    }
+  }
+
+  void _updateMemberIfDate(Member member, int index, DateTime newData) {
+    switch (index) {
+      case 0:
+        member.birthday = newData;
+        break;
+      case 3:
+        member.kevaDate = newData;
+        break;
+      case 4:
+        member.releaseDate = newData;
+        break;
+      case 6:
+        member.notAvailableUntil = newData;
+        break;
+      case 7:
+        member.beforeLastShabat = newData;
+        break;
+      case 8:
+        member.lastHoliday = newData;
+        break;
+      case 9:
+        member.lastShabat = newData;
+        break;
+      case 10:
+        member.lastRegularDay = newData;
+        break;
+      default:
+        break;
     }
   }
 
