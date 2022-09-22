@@ -75,29 +75,31 @@ class CrewPageBody extends StatelessWidget {
                     .toString()),
               ],
             ),
-            Expanded(
-              child: Container(
-                margin: EdgeInsets.all(30.0),
-                padding: EdgeInsets.all(30.0),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(50.0),
-                  color: Colors.white.withOpacity(0.4),
-                  border: Border.all(
-                    color: Colors.blueAccent,
-                    width: 5.0,
+            Container(
+              child: Expanded(
+                child: Container(
+                  margin: EdgeInsets.all(30.0),
+                  padding: EdgeInsets.all(30.0),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(50.0),
+                    color: Colors.white.withOpacity(0.4),
+                    border: Border.all(
+                      color: Colors.blueAccent,
+                      width: 5.0,
+                    ),
+                    boxShadow: const [
+                      BoxShadow(
+                          color: Colors.white,
+                          blurRadius: 50.0,
+                          offset: Offset(2.0, 2.0))
+                    ],
                   ),
-                  boxShadow: const [
-                    BoxShadow(
-                        color: Colors.white,
-                        blurRadius: 50.0,
-                        offset: Offset(2.0, 2.0))
-                  ],
-                ),
-                child: SingleChildScrollView(
-                  scrollDirection: Axis.vertical,
                   child: SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: BuildDataTable(),
+                    scrollDirection: Axis.vertical,
+                    child: SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: BuildDataTable(),
+                    ),
                   ),
                 ),
               ),

@@ -34,6 +34,14 @@ class _BuildDataTableState extends State<BuildDataTable> {
     final members = context.watch<MembersListBloc>().state.membersList.toList();
 
     return DataTable(
+      dividerThickness: 3.0,
+      headingRowHeight: 80,
+      horizontalMargin: 10.0,
+      dataRowHeight: 80,
+      headingRowColor: MaterialStateColor.resolveWith(
+          (states) => Colors.black.withOpacity(0.3)),
+      headingTextStyle:
+          const TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
       columns: _getColumns(columns),
       rows: _getUsers(members),
       columnSpacing: 10.0,
@@ -42,7 +50,8 @@ class _BuildDataTableState extends State<BuildDataTable> {
 
   List<DataColumn> _getColumns(List<String> columns) {
     return columns.map((String column) {
-      return DataColumn(label: Text(column, textAlign: TextAlign.center));
+      return DataColumn(
+          label: Expanded(child: Text(column, textAlign: TextAlign.center)));
     }).toList();
   }
 
@@ -81,7 +90,12 @@ class _BuildDataTableState extends State<BuildDataTable> {
   }
 
   DataCell _buildDataCell(String data, int index, Object? cell, Member member) {
-    return DataCell(Text(data, textAlign: TextAlign.center), onDoubleTap: () {
+    return DataCell(
+        Center(
+            child: Text(
+          data,
+          textAlign: TextAlign.center,
+        )), onDoubleTap: () {
       switch (cell.runtimeType) {
         case String:
           _editStringIntType(member, index);
